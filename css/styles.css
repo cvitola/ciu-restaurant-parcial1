@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10em;
+}
+
+h1{
+    font-size: calc(28px + 2vw);
+    font-weight: 900;
+}
+/*Configuracion Modos Claro/Oscuro*/
+.light_mood_body{
+    background-color: #eaf7f9;
+    background-image: linear-gradient(135deg, #eaf7f9 0%, #f9f9f9 100%);
+    color: #030307;
+    transition: all 1s ease-out;
+}
+
+.dark_mood_body{
+    background-color: #021820;
+    background-image: linear-gradient(135deg, #032f2f 0%, #033a3a 33%);
+    color: #f7f7f7;
+    transition: all 1s ease-out;
+}
+
+.light_mood_varius{
+    background-color: #021820;
+    background-image: linear-gradient(135deg, #032f2f 0%, #033a3a 33%);
+    color: #f7f7f7;
+    transition: all 1s ease-out;
+}
+.dark_mood_varius{
+    background-color: #eaf7f9;
+    background-image: linear-gradient(135deg, #eaf7f9 0%, #f9f9f9 100%);
+    color: #030307;
+    transition: all 1s ease-out;
+}
+/*Fin configuracion Modos Claro/Oscuro*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: outset;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.header__mood{
+    border: none;
+    position: fixed;
+    right: 10px;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 50%;
+    border-radius: 50%;
+}
+
+.header__logo img{
+    width: 350px;
+}
+
+
+.header__menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;   
+    margin-top: 30px;
+    display: flex;
+}
+.header__menu ul li button{
+    border: none;
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    font-size: large;
+    border-radius: 10px;
+}
+.header__menu ul li button:hover{
+    box-shadow: 2px 2px 2px grey;
+}
+.imagenes img{
+    width: 15%;
+    border-radius: 30px;
+    padding: 25px;
+    margin: 25px;
+}
+.main__banner{
+    background-image: linear-gradient(rgba(32, 30, 30, 0.288),rgba(53, 49, 49, 0.699)), url("../assets/banner1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilos para Detalle*/
+.main__section__entrada h2{
+   font-weight: 900;
+   margin-bottom: 40px;
+   margin-top: 40px;
+   font-size: calc(24px + 1vw);
+   border-bottom: solid grey 4px;
+}
+.main__section__entrada__item{
+    border-bottom: solid grey 2px;
+
+}
+.main__section__entrada__item__cabecera{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.main__section__entrada__item__cabecera > * {
+    font-size: calc(14px + 1vw);
+    font-weight: 900;
+}
+/*Fin para Detalle*/
+
+/*Estilos para Menu*/
+.detalle_card{
+    width: 18rem;
+    border: none;
+    box-shadow: 2px 2px 2px grey;
+}
+.detalle_card:hover{
+    transform: translateY(-15px);
+}
+/*Estilos para Contacto*/
+iframe{
+    width: 500px;
+    height: 500px;
+    margin: 15px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+    font-weight: bolder;
+}
+form .caja{
+    box-shadow: 1px 1px 1px grey;
+}
+.contact-form{
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+}
+.contact-form img{
+    max-width: 600px;
+}
+form input{
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+.grupo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/*Fin Contacto*/
+
+.btn-scrolltop{
+    position: fixed;
+    bottom: 18em;
+    right: 10px;
+    padding: 15px 20px;
+    border: 1px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: 0.3s;
+}
+
+footer{
+    transition: all 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    width: 100%;   
+    position: fixed;
+    bottom: 0;
+}
+
+.footer__redes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.footer__redes > * {
+    padding: 10px;
+    max-width: 48px;
+    cursor: pointer;
+}
+.footer__derechos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: calc(18px + 0.3vw);
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 991px) {
+    .header__menu ul, .main__section__ejecutivo, .main__section__al_paso div, .main__section__meriendas, .contact-form{
+        flex-direction: column;
+        align-items: center;
+    }
+    marquee{
+        display:none;
+    }
+    .header{
+        border-bottom: none;
+    }
+    iframe{
+        width: 80%;
+    }
+
+
+    
+}

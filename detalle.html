@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Bienvenido Mi Restaurant 2.0</title>
+</head>
+<body class="light_mood_body">
+    <header class="header">
+        <button class="header__mood" id="alternarColores">
+            <img src="assets/moon.png" alt="moon">
+        </button>
+        <div class="header__bienvenida">
+            <h1 class="p-1 m-3">Nuestra Carta</h1>
+        </div>
+
+        <nav class="header__menu">
+            <ul>
+                <li><button onClick="redireccionar('index')" class="light_mood_varius">INICIO</button></li>
+                <li><button onClick="redireccionar('menu')" class="light_mood_varius">MENU</button></li>
+                <li><button onClick="redireccionar('contacto')" class="light_mood_varius">CONTACTO</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section class="main__section__entrada">
+            <h2>Entradas</h2>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>PICADA CERVECERA</h3>
+                    <h4>$2600</h4>
+                </div>
+                <p>Jamon, queso, salame, bondiola, aceitunas, roquefort, pategras, jamon
+                    crudo, manteca saborizada, acompañado de panera casera y papas
+                    fritas. (para 2 personas)</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>PICADA VEGGIE</h3>
+                    <h4>$2990</h4>
+                </div>
+                <p>Bombas de roquefort,bastoncitos de muzzarella, queso tybo, queso
+                    pategras, albondigas de verdura, milanesas de calabaza, aceitunas,
+                    hummus de remolacha, pasta de berenjenas y tomates cherrys
+                    salteados. Acompañada de panera casera y papas fritas. (para 3
+                    personas)</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>MILANESA DE CARNE</h3>
+                    <h4>$1300</h4>
+                </div>
+                <p>Milanesa de bife de chorizo con guarnicion (ensalada o papas
+                    fritas).</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>MILANESA DE POLLO</h3>
+                    <h4>$1290</h4>
+                </div>
+                <p>Rebozada en cereales y pan rallado con guarnicion (papas fritas
+                    o ensalada).</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>WRAP VEGGIE</h3>
+                    <h4>$1390</h4>
+                </div>
+                <p>2 fajitas rellenas de mix de hojas verdes, palta, humus de
+                    remolacha ahumado, queso sardo, tomate cherry confitado,
+                    acompañado de fritas y cebolla caramelizada.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>RAVIOLONES</h3>
+                    <h4>$1450</h4>
+                </div>
+                <p>De ricotta, jamon y muzzarella con salsa de langostinos o
+                    bolognesa.</p>
+            </article>
+        </section>
+
+        <section class="main__section__entrada">
+            <h2>Hamburguesas</h2>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>CLÁSICA(con papas fritas)</h3>
+                    <h4>$1160</h4>
+                </div>
+                <p>Medallón de carne, jamón, queso, lechuga, tomate y aro de cebolla.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>VEGGIE (con papas fritas)</h3>
+                    <h4>$1200</h4>
+                </div>
+                <p>Medallon de garbanzos, lentejas y porotos con provolone, cebolla
+                    caramelizada y verduras asadas.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>DOBLE CUARTO (con papas fritas)</h3>
+                    <h4>$1550</h4>
+                </div>
+                <p>Doble medallón de carne, cheddar, panceta y salsa especial.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>LA SERGHI (con papas fritas)</h3>
+                    <h4>$1550</h4>
+                </div>
+                <p>Doble medallon de carne, queso tybo, tomate, rucula, panceta y
+                    guacamole.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>DE BONDIOLA (con batatas fritas)</h3>
+                    <h4>$1550</h4>
+                </div>
+                <p>Medallón de cerdo, con lechuga, coleslaw, muzzarella, pepinos, salsa
+                    agridulce de kétchup, mostaza y miel acompañada de batatas fritas.</p>
+            </article>
+            
+        </section>
+
+        <section class="main__section__entrada">
+            <h2>Pizzas</h2>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>MUZZARELLA</h3>
+                    <h4>$1560</h4>
+                </div>
+                <p>Salsa de tomate, muzzarella, olivas y orégano.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>FUGAZZETA</h3>
+                    <h4>$1600</h4>
+                </div>
+                <p>Cebolla, muzzarella, olivas y orégano.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>PRIMAVERA</h3>
+                    <h4>$1750</h4>
+                </div>
+                <p>Salsa de tomate, muzzarella, rúcula, parmesano, jamón crudo,
+                    tomate caramelizado, y reducción de aceto.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>VEGGIE</h3>
+                    <h4>$1350</h4>
+                </div>
+                <p>Masa de salvado, salsa de tomate, muzzarella, zucchini,
+                    berenjenas, morrones asados y olivas.</p>
+            </article>
+                       
+        </section>
+
+        <section class="main__section__entrada">
+            <h2>Postres</h2>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>FLAN CASERO</h3>
+                    <h4>$680</h4>
+                </div>
+                <p>Clásico; con dulce de leche y crema.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>BROWNIE</h3>
+                    <h4>$790</h4>
+                </div>
+                <p>Clásico Brownie de chocolate con una bocha de helado de
+                    crema americana.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>CRUMBLE DE MANZANA</h3>
+                    <h4>$690</h4>
+                </div>
+                <p>Con helado de crema americana.</p>
+            </article>
+                                  
+        </section>
+
+        <section class="main__section__entrada">
+            <h2>Bebidas, Cervezas y Tragos</h2>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>GASEOSA LINEA COCA 355CC</h3>
+                    <h4>$300</h4>
+                </div>
+                
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>AGUA SABORIZADA</h3>
+                    <h4>$290</h4>
+                </div>
+
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>LIMONADA</h3>
+                    <h4>$590</h4>
+                </div>
+                <p>Limon, agua y azucar. (Opcional menta y jengibre).</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>PILSEN</h3>
+                    <h4>$490</h4>
+                </div>
+                <strong>ALC 5.0% IBU 16</strong>
+                <p>Fresca, bien balanceada, de color dorado, leve
+                    amargor predominando la malta.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>HONEY QUEEN</h3>
+                    <h4>$510</h4>
+                </div>
+                <strong>ALC 5% IBU 10</strong>
+                <p>De color dorado claro. Perfecta combinación de miel y
+                    malta, dulce con mucha presencia de miel en boca.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>SCOTCH ALE</h3>
+                    <h4>$490</h4>
+                </div>
+                <strong>ALC 5.3 IBU 12</strong>
+                <p>De color ámbar, cobrizo intenso, predomina la malta
+                    con notas a caramelo y un leve tostado.</p>
+            </article>
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>BLACK IPA</h3>
+                    <h4>$550</h4>
+                </div>
+                <strong>ALC 6% IBU 43</strong>
+                <p>Moderadamente amarga, se permite un dulzor que
+                    permanece en el gusto final, leve aspereza de las
+                    maltas tostadas pero con buen balance en el lupulado.</p>
+            </article>
+
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>BAILEYS FROZEN</h3>
+                    <h4>$830</h4>
+                </div>
+                <p>Baileys, licor dulce de leche y crema americana.</p>
+            </article>
+
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>CAIPIROSKA</h3>
+                    <h4>$770</h4>
+                </div>
+                <strong>(clásica/ maracuya / frutilla / frutos rojos)</strong>
+                <p>Vodka smirnoff con lima macerada en almibar.</p>
+            </article>
+
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>MARGARITA FROZEN</h3>
+                    <h4>$800</h4>
+                </div>
+                <p>Tequila jose cuervo silver, limon, triple sec, bitter
+                    angostura.</p>
+            </article>
+
+            <article class="main__section__entrada__item">
+                <div class="main__section__entrada__item__cabecera">
+                    <h3>PIÑA COLADA</h3>
+                    <h4>$750</h4>
+                </div>
+                <p>Havana club, malibu, anana, limon, almibar especial,
+                    y jugo de naranja.</p>
+            </article>
+                                  
+        </section>
+
+    </main>
+    <button class="btn-scrolltop light_mood_varius" id="btn_scroll">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    <footer class="light_mood_varius">
+        <div class="footer__redes">
+            <img src="assets/facebook.png" alt="Facebook" title="@CosasCaserasWeb">
+            <img src="assets/pinterest.png" alt="Pinterest" title="@CosasCaserasWeb">
+            <img src="assets/twitter.png" alt="Twitter" title="@CosasCaserasWeb">
+            <img src="assets/whatsapp.png" alt="whatsapp" title="@CosasCaserasWeb">
+            <img src="assets/instagram.png" alt="Instagram" title="@CosasCaserasWeb">
+        </div>
+        <div class="footer__derechos">
+            <p>TODOS LOS DERECHOS RESERVADOS</p>
+            <P>Hecho por VittoSolution 💗</P>
+        </div>
+    </footer>
+    <script src="js/alternarModos.js"></script>
+    <script src="js/navegacion.js"></script>
+    <script src="js/irArriba.js"></script>
+</body>
+</html>
