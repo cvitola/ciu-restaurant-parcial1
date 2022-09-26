@@ -60,14 +60,12 @@ h1{
     border: none;
     position: fixed;
     right: 10px;
-    padding: 1em;
-    margin: 1em;
-    border-radius: 50%;
+    top: 10px;
     border-radius: 50%;
 }
 
 .header__logo img{
-    width: 350px;
+    width: 320px;
 }
 
 
@@ -236,6 +234,15 @@ footer{
         width: 80%;
     }
 
+    .header__bienvenida{
+        margin-top: 50px;
+    }
 
+    h1{
+        font-size: calc(23px + 2vw);
+    }
     
+    .header__mood{
+        z-index: 1;
+    }
 }
