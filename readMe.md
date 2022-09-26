@@ -15,3 +15,5 @@ introducción acerca de tu proyecto y qué ideas o enfoque elegiste para el mism
 5. Se incorporó JavaScript para manipular el modo claro/oscuro, para agregar un boton que scrolea hacia arriba y para navegar por las distintas partes del sitio y para validar el formulario de contacto, son archivos separados que cada pagina invoca según la necesidad.
 
 6. El sitio es responsive con 1 breakpoint.
+
+7. El sitio se deployó con netlify.com automaticamente desde GitHub 🚀
