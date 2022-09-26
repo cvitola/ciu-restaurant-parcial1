@@ -140,7 +140,7 @@ h1{
 /*Estilos para Contacto*/
 iframe{
     width: 500px;
-    height: 500px;
+    height: 100px;
     margin: 15px;
 }
 form{
@@ -192,7 +192,7 @@ footer{
     transition: all 1s ease-out;
     display: flex;
     flex-direction: column;
-    padding: 1em 0;
+    padding: 0;
     width: 100%;   
     position: fixed;
     bottom: 0;
@@ -224,7 +224,7 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-    marquee{
+    marquee, .direccion{
         display:none;
     }
     .header{
